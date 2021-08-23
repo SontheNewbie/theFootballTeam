@@ -1,0 +1,118 @@
+/* Reset CSS */
+/* Emmet*/
+*{ padding: 0px ;box-sizing: border-box; margin: 0;}
+#header{ z-index: 1;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.center{display: block;
+    margin-left: 50%;margin-right: 50%;}
+    .text-white{color: white !important;}
+#nav {display: inline-block;}
+#nav li a{ 
+    text-decoration: none;
+    color: white;
+padding:0px 24px 0px 24px ;
+text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: block;
+   
+}
+#nav >li:hover> a{color: black;background-color:white;
+ }
+#nav .subnav {position: absolute; }
+
+#nav .subnav li:hover a{color: black;background-color: white;}
+#nav li{position: relative;
+    display: inline-block;
+line-height: 46px;
+}
+#nav .icon{font-size: 10px;}
+#header .search-btn {color: white;
+float: right;
+line-height: 46px;
+padding: 0px 20px;
+}
+#header .search-btn:hover
+{background-color:red;
+cursor: pointer;}
+#main{
+}
+
+
+
+
+#slider{ 
+    position: relative;
+margin-top: 46px;
+padding-top: 50%;
+background: url(/w3school_band/assets/css/img/slider/la.jpg) top center /cover no-repeat;
+}
+#text-content{ width: 100%;
+    font-size: 17px;
+    text-align: center; 
+     color: white;
+    position: absolute;
+    margin-bottom: 47px;
+    bottom: 0px;}
+    
+#text-description{
+font-weight: 900;
+
+}
+#text-heading{margin: 10px 0 10px 0; font-weight: 200;
+
+
+}
+#background-image{}
+
+
+
+
+
+#content{ 
+}
+.content-section{ padding: 64px 0px 64px 0px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.content-heading{margin: 10px 0 10px 0;font-size: 30px;font-weight: 100;}
+.content-about{margin: 15px 0 15px 0; width: 768px ;margin-left: auto; margin-right: auto;
+text-align: justify;}
+.content-sologan{font-style: italic;color: gray;}
+.band-member{display: inline-block; width: 20%;
+margin-left: 100px; ;}
+
+.tour-section{background-color: black;
+}
+.ticket-list {background-color: white;margin-top: 40px;;font: size 15px; ; font-family:fantasy;}
+.ticket-list li {border: 1px solid gray;padding: 8px 0 8px 0px; }
+.ticket-list .sold-out{background-color: red;  color: white; margin-left: 25px;}
+.ticket-list .quantity{background-color: black;color: white;float: right;border-radius: 50%;
+    width: 24px ;height: 24px;line-height: 24px;text-align: center;}
+.ticket-holder{display: inline-block;background-color: white;margin:0px 8px 0px 8px ;width: 250px;height: 400px;left: 0;right: 0 ;}
+.ticket-pic{width: 250px;height: 50%;}
+.ticket-section{padding-bottom: 50px;display: flex; justify-content: center;}
+.ticket-info{margin: 16px;}
+.buy-ticket-section{background-color: black;color: white;display: block; width: 100px;height: 50px;text-align: center;
+    margin: 30px 0px 30px 0px; line-height: 50px;}
+    .buy-ticket-section:hover{background-color: gray;color: black;cursor: pointer;}
+
+  /* CONTACT */
+.input-half{display: inline-block; margin: 15px;}
+.content-detail{display: inline-block;}
+.image-background{width: 100%;height: auto; vertical-align: middle; filter: grayscale(50%);}
+
+
+
+
+
+#footer{
+margin-left: auto; margin-right: auto; text-align: center;font-size: 30px;height: 300px;line-height: 200px;
+}
