@@ -1,6 +1,6 @@
 <!DOCTYPE html>
  <html lang="eng">
-<head>
+<head>  <title>The Band</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./assets/css/fonts/themify-icons/themify-icons.css">
 <link rel="stylesheet" href="./assets/css/style.css">
@@ -8,10 +8,10 @@
     <body>
      <div id="header"> 
         <ul id="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Band</a></li>
-            <li><a href="">Tour</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#BAND">Band</a></li>
+            <li><a href="#TOUR">Tour</a></li>
+            <li><a href="#CONTACT">Contact</a></li>
             <li><a href="#">
                 More <i class="icon ti-arrow-down"></i>
             </a>
@@ -43,7 +43,7 @@
 
      <div  id="content">
          <!-- about section -->
-         <div class="content-section">
+         <div id="BAND" class="content-section">
              <h2 class="content-heading">THE BAND </h2>
              <p class="content-sologan">We love music</p>
              <p class="content-about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -66,7 +66,7 @@
             </div>
           
             <!-- tour section -->
-            <div class="tour-section">
+            <div id="TOUR" class="tour-section">
                 <div class="content-section">
                         <h2 class="content-heading text-white">TOUR DATES </h2>
                         <p class="content-sologan">Remember to book your tickets!</p>
@@ -83,7 +83,7 @@
                             <b >New york</b>
                             <p class="content-sologan">Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <span class="buy-ticket-section">Buy Tickets</span>
+                            <button class="buy-ticket-section js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="ticket-holder">
@@ -92,7 +92,7 @@
                             <b >Paris</b>
                             <p class="content-sologan">Sat 28 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <span class="buy-ticket-section">Buy Tickets</span>
+                            <button class="buy-ticket-section  js-buy-ticket"  >Buy Tickets</button>
                         </div>
                     </div>
                     <div class="ticket-holder">
@@ -101,7 +101,7 @@
                             <b >San Francisco</b>
                             <p class="content-sologan">Sun 29 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <span class="buy-ticket-section">Buy Tickets</span>
+                            <button class="buy-ticket-section  js-buy-ticket"  >Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
 
 
          <!-- contact section -->
-       <div class="content-section">
+       <div id="CONTACT" class="content-section">
                 <h2 class="content-heading">CONTACT </h2>
                 <p class="content-sologan">Fan?Drop a note!</p>
             <div class="contact-detail">
@@ -138,12 +138,60 @@
      <div class="image-section">
          <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="image-background">
      </div>
+     <div class="modal  js-modal">
+         <div class="modal-container">
+             <i class="ti-close js-modal-close"></i>
+             <div class="modal-header"><i class="ti-bag">Tickets</i>
+            </div>
+            <div class="modal-body">  
+                
+                <div class="modal-body-input"><label for="howmany" class="ticket-modal"><i class="ti-shopping-cart"></i> Tickets, $15 per person
 
-
+                </label> <br>
+                <input type="text" placeholder="How many?" id="howmany"> </div>
+                
+                <div class="modal-body-input"><label for="email" class="ticket-modal"><i class="ti-email"></i>  Send To
+                </label> <br>
+                <input type="email" placeholder="Enter email" id="email"></div>
+                <button id="modal-btn">Pay <i class="ti-check"></i></button>
+                <footer class="modal-footer">
+                   <div class="modal-body-input"> <p>Need <a  href="#" class="modal-help">help?</a></p></div>
+                </footer>
+                
+                
+            </div>
+        </div>
+    </div>
      <div id="footer">
         <i class="ti-facebook"></i> <i class="ti-instagram"></i> <i class="ti-flickr"></i> <i class="ti-pinterest"></i> <i class="ti-linkedin"></i>
         <p class="footer-text">Powered by </p> <a href="#">Bác sĩ khám mồm </a>
     </div>
-     
+
+     <script>
+         const buyBtns =document.querySelectorAll('.js-buy-ticket')
+        const modal =document.querySelector('.js-modal')
+        const modalClose =document.querySelector('.js-modal-close')
+
+
+
+        function showBuyTicket () {modal.classList.add('open')}
+        function hideBuyTicket () {modal.classList.remove('open')}
+
+
+        for(const buyBtn of buyBtns ) {buyBtn.addEventListener('click',)
+
+
+        }
+        modalClose.addEventListener('click', hideBuyTicket )
+
+
+
+
+     </script>
     </body>
 </html>
+                
+                
+                
+                
+                
